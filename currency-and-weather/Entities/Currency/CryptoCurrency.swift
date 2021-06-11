@@ -20,7 +20,7 @@ class CryptoCurrency: IItemWithId {
     var vwap24Hr: String
     var cryptoUrl: String
     
-    init(json: [String: Any])  {
+    required init(json: [String: Any])  {
         if let id = json["rank"] as? Int {
             self.id = id
         } else {

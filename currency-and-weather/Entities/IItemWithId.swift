@@ -9,4 +9,6 @@ import Foundation
 
 protocol IItemWithId {
     var id: Int { get set }
+    
+    init(json:[String: Any])
 }
