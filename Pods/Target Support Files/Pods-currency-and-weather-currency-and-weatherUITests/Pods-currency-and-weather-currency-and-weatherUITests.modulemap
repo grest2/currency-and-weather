@@ -1,0 +1,6 @@
+framework module Pods_currency_and_weather_currency_and_weatherUITests {
+  umbrella header "Pods-currency-and-weather-currency-and-weatherUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

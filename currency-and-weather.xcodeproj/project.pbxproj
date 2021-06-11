@@ -15,6 +15,9 @@
 		44A7D67126736E8C00375D21 /* currency_and_weather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66F26736E8C00375D21 /* currency_and_weather.xcdatamodeld */; };
 		44A7D67C26736E8C00375D21 /* currency_and_weatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D67B26736E8C00375D21 /* currency_and_weatherTests.swift */; };
 		44A7D68726736E8D00375D21 /* currency_and_weatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D68626736E8D00375D21 /* currency_and_weatherUITests.swift */; };
+		A5E8909DD476EC1E1B8963AE /* Pods_currency_and_weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6BE49C5F48EB512DD14040 /* Pods_currency_and_weather.framework */; };
+		C4C69AD1C51A2B71DC98B08E /* Pods_currency_and_weather_currency_and_weatherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5298B72863655A5D29982C53 /* Pods_currency_and_weather_currency_and_weatherUITests.framework */; };
+		FCD64E1B6D3EF256B7E071B7 /* Pods_currency_and_weatherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90B1D5CA24C12B77EC96F2CF /* Pods_currency_and_weatherTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		44A7D68226736E8C00375D21 /* currency-and-weatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "currency-and-weatherUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A7D68626736E8D00375D21 /* currency_and_weatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_and_weatherUITests.swift; sourceTree = "<group>"; };
 		44A7D68826736E8D00375D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5298B72863655A5D29982C53 /* Pods_currency_and_weather_currency_and_weatherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_and_weather_currency_and_weatherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		722731F6FD867BD2B783CB6F /* Pods-currency-and-weatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weatherTests.release.xcconfig"; path = "Target Support Files/Pods-currency-and-weatherTests/Pods-currency-and-weatherTests.release.xcconfig"; sourceTree = "<group>"; };
+		90B1D5CA24C12B77EC96F2CF /* Pods_currency_and_weatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_and_weatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D1629E748C43C1A319530EB /* Pods-currency-and-weather-currency-and-weatherUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weather-currency-and-weatherUITests.debug.xcconfig"; path = "Target Support Files/Pods-currency-and-weather-currency-and-weatherUITests/Pods-currency-and-weather-currency-and-weatherUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A22C53004DE8E9B3F10D4AF5 /* Pods-currency-and-weather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weather.debug.xcconfig"; path = "Target Support Files/Pods-currency-and-weather/Pods-currency-and-weather.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6BE49C5F48EB512DD14040 /* Pods_currency_and_weather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_and_weather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE5E6FE97552868D67F3167F /* Pods-currency-and-weather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weather.release.xcconfig"; path = "Target Support Files/Pods-currency-and-weather/Pods-currency-and-weather.release.xcconfig"; sourceTree = "<group>"; };
+		DEDC1EDA39DE36FACCDB21BB /* Pods-currency-and-weather-currency-and-weatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weather-currency-and-weatherUITests.release.xcconfig"; path = "Target Support Files/Pods-currency-and-weather-currency-and-weatherUITests/Pods-currency-and-weather-currency-and-weatherUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE5B79674AA601DB1276428A /* Pods-currency-and-weatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency-and-weatherTests.debug.xcconfig"; path = "Target Support Files/Pods-currency-and-weatherTests/Pods-currency-and-weatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E8909DD476EC1E1B8963AE /* Pods_currency_and_weather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD64E1B6D3EF256B7E071B7 /* Pods_currency_and_weatherTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C69AD1C51A2B71DC98B08E /* Pods_currency_and_weather_currency_and_weatherUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				44A7D67A26736E8C00375D21 /* currency-and-weatherTests */,
 				44A7D68526736E8C00375D21 /* currency-and-weatherUITests */,
 				44A7D66226736E7C00375D21 /* Products */,
+				FFD489F985B93C0DB71123F5 /* Pods */,
+				549EB71ADF2BF940DF160A0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,6 +153,30 @@
 			path = "currency-and-weatherUITests";
 			sourceTree = "<group>";
 		};
+		549EB71ADF2BF940DF160A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6BE49C5F48EB512DD14040 /* Pods_currency_and_weather.framework */,
+				5298B72863655A5D29982C53 /* Pods_currency_and_weather_currency_and_weatherUITests.framework */,
+				90B1D5CA24C12B77EC96F2CF /* Pods_currency_and_weatherTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFD489F985B93C0DB71123F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A22C53004DE8E9B3F10D4AF5 /* Pods-currency-and-weather.debug.xcconfig */,
+				BE5E6FE97552868D67F3167F /* Pods-currency-and-weather.release.xcconfig */,
+				9D1629E748C43C1A319530EB /* Pods-currency-and-weather-currency-and-weatherUITests.debug.xcconfig */,
+				DEDC1EDA39DE36FACCDB21BB /* Pods-currency-and-weather-currency-and-weatherUITests.release.xcconfig */,
+				FE5B79674AA601DB1276428A /* Pods-currency-and-weatherTests.debug.xcconfig */,
+				722731F6FD867BD2B783CB6F /* Pods-currency-and-weatherTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A7D68B26736E8D00375D21 /* Build configuration list for PBXNativeTarget "currency-and-weather" */;
 			buildPhases = (
+				B66A56D890A0758794E494A6 /* [CP] Check Pods Manifest.lock */,
 				44A7D65D26736E7C00375D21 /* Sources */,
 				44A7D65E26736E7C00375D21 /* Frameworks */,
 				44A7D65F26736E7C00375D21 /* Resources */,
+				54E89BE5A78889367C7B52CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A7D68E26736E8D00375D21 /* Build configuration list for PBXNativeTarget "currency-and-weatherTests" */;
 			buildPhases = (
+				D68BD5F3CC4D03B2CD7C05A2 /* [CP] Check Pods Manifest.lock */,
 				44A7D67326736E8C00375D21 /* Sources */,
 				44A7D67426736E8C00375D21 /* Frameworks */,
 				44A7D67526736E8C00375D21 /* Resources */,
@@ -178,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44A7D69126736E8D00375D21 /* Build configuration list for PBXNativeTarget "currency-and-weatherUITests" */;
 			buildPhases = (
+				642BB6DF6F76EAA717AE509A /* [CP] Check Pods Manifest.lock */,
 				44A7D67E26736E8C00375D21 /* Sources */,
 				44A7D67F26736E8C00375D21 /* Frameworks */,
 				44A7D68026736E8C00375D21 /* Resources */,
+				5D97D7B555ECF3DF403261C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -259,6 +305,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54E89BE5A78889367C7B52CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather/Pods-currency-and-weather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather/Pods-currency-and-weather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather/Pods-currency-and-weather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D97D7B555ECF3DF403261C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather-currency-and-weatherUITests/Pods-currency-and-weather-currency-and-weatherUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather-currency-and-weatherUITests/Pods-currency-and-weather-currency-and-weatherUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-currency-and-weather-currency-and-weatherUITests/Pods-currency-and-weather-currency-and-weatherUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		642BB6DF6F76EAA717AE509A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-currency-and-weather-currency-and-weatherUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66A56D890A0758794E494A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-currency-and-weather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68BD5F3CC4D03B2CD7C05A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-currency-and-weatherTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44A7D65D26736E7C00375D21 /* Sources */ = {
@@ -422,6 +571,7 @@
 		};
 		44A7D68C26736E8D00375D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A22C53004DE8E9B3F10D4AF5 /* Pods-currency-and-weather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +593,7 @@
 		};
 		44A7D68D26736E8D00375D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE5E6FE97552868D67F3167F /* Pods-currency-and-weather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +615,7 @@
 		};
 		44A7D68F26736E8D00375D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE5B79674AA601DB1276428A /* Pods-currency-and-weatherTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +637,7 @@
 		};
 		44A7D69026736E8D00375D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 722731F6FD867BD2B783CB6F /* Pods-currency-and-weatherTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +659,7 @@
 		};
 		44A7D69226736E8D00375D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D1629E748C43C1A319530EB /* Pods-currency-and-weather-currency-and-weatherUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +679,7 @@
 		};
 		44A7D69326736E8D00375D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDC1EDA39DE36FACCDB21BB /* Pods-currency-and-weather-currency-and-weatherUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

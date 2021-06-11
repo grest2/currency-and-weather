@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_currency_and_weather_currency_and_weatherUITests : NSObject
+@end
+@implementation PodsDummy_Pods_currency_and_weather_currency_and_weatherUITests
+@end
