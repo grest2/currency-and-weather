@@ -14,6 +14,9 @@ extension Resolver: ResolverRegistering {
         register {
             RequestService() as IRequestService
         }
+        register {
+            ObjectManager() as IObjectManager
+        }
     }
 }
 

@@ -12,6 +12,9 @@
 		444D53602673F57400299056 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D535F2673F57400299056 /* CryptoCurrency.swift */; };
 		444D53732673FAA600299056 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53722673FAA600299056 /* RequestService.swift */; };
 		444D53862673FFD000299056 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53852673FFD000299056 /* Injection.swift */; };
+		444D53BB2674041100299056 /* IObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BA2674041100299056 /* IObjectManager.swift */; };
+		444D53C02674047C00299056 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BF2674047C00299056 /* ObjectManager.swift */; };
+		444D53C52674056D00299056 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53C42674056D00299056 /* ItemRequest.swift */; };
 		44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */; };
 		44A7D66726736E7C00375D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66626736E7C00375D21 /* ContentView.swift */; };
 		44A7D66926736E8C00375D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A7D66826736E8C00375D21 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		444D535F2673F57400299056 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
 		444D53722673FAA600299056 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		444D53852673FFD000299056 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		444D53BA2674041100299056 /* IObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IObjectManager.swift; sourceTree = "<group>"; };
+		444D53BF2674047C00299056 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
+		444D53C42674056D00299056 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 		44A7D66126736E7C00375D21 /* currency-and-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-and-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_and_weatherApp.swift; sourceTree = "<group>"; };
 		44A7D66626736E7C00375D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				444D534E2673F3E200299056 /* IRequestService.swift */,
+				444D53BA2674041100299056 /* IObjectManager.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -132,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				444D53722673FAA600299056 /* RequestService.swift */,
+				444D53BF2674047C00299056 /* ObjectManager.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 				444D535E2673F55600299056 /* Weather */,
 				444D535D2673F54D00299056 /* Currency */,
 				444D53552673F4BB00299056 /* IItemWithId.swift */,
+				444D53C42674056D00299056 /* ItemRequest.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -496,10 +505,13 @@
 				444D53732673FAA600299056 /* RequestService.swift in Sources */,
 				44A7D66726736E7C00375D21 /* ContentView.swift in Sources */,
 				44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */,
+				444D53C52674056D00299056 /* ItemRequest.swift in Sources */,
+				444D53C02674047C00299056 /* ObjectManager.swift in Sources */,
 				444D53602673F57400299056 /* CryptoCurrency.swift in Sources */,
 				444D534F2673F3E200299056 /* IRequestService.swift in Sources */,
 				444D53862673FFD000299056 /* Injection.swift in Sources */,
 				44A7D67126736E8C00375D21 /* currency_and_weather.xcdatamodeld in Sources */,
+				444D53BB2674041100299056 /* IObjectManager.swift in Sources */,
 				444D53562673F4BB00299056 /* IItemWithId.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
