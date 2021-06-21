@@ -12,6 +12,14 @@ struct MainView: View {
     private let objectManager: IObjectManager = Resolver.resolve();
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
     
+    var header : some View {
+        VStack {
+            Text("Currency's & Weather")
+                .foregroundColor(Color.primary)
+                .font(.title)
+        }
+    }
+    
     var currencyes :some View {
         HStack {
             Spacer()
@@ -56,7 +64,17 @@ struct MainView: View {
                 self.weather
             }
             .padding(32)
-            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.purple,.weatherback]), startPoint: .top, endPoint: .bottom) )
+            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.purple,.weatherback]), startPoint: .top, endPoint: .bottom)
+                            .edgesIgnoringSafeArea(.bottom))
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    header
+                }
+            }
+        }
+        .onAppear {
+            UINavigationBar.appearance().backgroundColor = .red
         }
     }
 }
