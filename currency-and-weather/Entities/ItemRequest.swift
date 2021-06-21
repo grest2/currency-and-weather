@@ -12,8 +12,8 @@ class ItemRequest<T> where T: IItemWithId {
     
     
     init(type: T.Type,json:[String: Any]) {
-        if let objectArray = json["data"] as? [String: Any] {
-            objectArray.values.forEach({
+        if let objectArray = json["data"] as? [Any] {
+            objectArray.forEach({
                 if let itemJson = $0 as? [String: Any] {
                     guard let item = try? type.init(json:itemJson) else {
                         return

@@ -15,6 +15,7 @@ class ObjectManager: IObjectManager {
     private let requestService: IRequestService = Resolver.resolve();
     
     func getObjectList<T>(type:T.Type,url: String) -> Promise<ItemRequest<T>> {
+        
         return requestService.getMethod(url: url).then {
             json in
             let reqItems = ItemRequest(type: type, json: json)

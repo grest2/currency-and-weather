@@ -21,9 +21,9 @@ class CryptoCurrency: IItemWithId {
     var cryptoUrl: String
     
     required init(json: [String: Any])  {
-        if let id = json["rank"] as? Int {
-            self.id = id
-        } else {
+        if let id = json["rank"] as? String {
+            self.id = Int(id) ?? -1
+        }else {
             self.id = -1
         }
         if let symbol = json["symbol"] as? String {
