@@ -13,8 +13,7 @@ struct currency_and_weatherApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainView()
         }
     }
 }

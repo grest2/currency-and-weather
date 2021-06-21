@@ -15,8 +15,9 @@
 		444D53BB2674041100299056 /* IObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BA2674041100299056 /* IObjectManager.swift */; };
 		444D53C02674047C00299056 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BF2674047C00299056 /* ObjectManager.swift */; };
 		444D53C52674056D00299056 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53C42674056D00299056 /* ItemRequest.swift */; };
+		445F6FFD2680912F0074DA6C /* AppereancySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F6FFC2680912F0074DA6C /* AppereancySettings.swift */; };
 		44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */; };
-		44A7D66726736E7C00375D21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66626736E7C00375D21 /* ContentView.swift */; };
+		44A7D66726736E7C00375D21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66626736E7C00375D21 /* MainView.swift */; };
 		44A7D66926736E8C00375D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A7D66826736E8C00375D21 /* Assets.xcassets */; };
 		44A7D66C26736E8C00375D21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A7D66B26736E8C00375D21 /* Preview Assets.xcassets */; };
 		44A7D66E26736E8C00375D21 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66D26736E8C00375D21 /* Persistence.swift */; };
@@ -54,9 +55,10 @@
 		444D53BA2674041100299056 /* IObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IObjectManager.swift; sourceTree = "<group>"; };
 		444D53BF2674047C00299056 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		444D53C42674056D00299056 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
+		445F6FFC2680912F0074DA6C /* AppereancySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppereancySettings.swift; sourceTree = "<group>"; };
 		44A7D66126736E7C00375D21 /* currency-and-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-and-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_and_weatherApp.swift; sourceTree = "<group>"; };
-		44A7D66626736E7C00375D21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44A7D66626736E7C00375D21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		44A7D66826736E8C00375D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A7D66B26736E8C00375D21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44A7D66D26736E8C00375D21 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		444D534A2673F33D00299056 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				445F6FFC2680912F0074DA6C /* AppereancySettings.swift */,
 				44A7D66D26736E8C00375D21 /* Persistence.swift */,
 				444D534B2673F39900299056 /* Dependecy Injection */,
 			);
@@ -158,7 +161,7 @@
 		444D53542673F44700299056 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				44A7D66626736E7C00375D21 /* ContentView.swift */,
+				44A7D66626736E7C00375D21 /* MainView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -503,7 +506,8 @@
 			files = (
 				44A7D66E26736E8C00375D21 /* Persistence.swift in Sources */,
 				444D53732673FAA600299056 /* RequestService.swift in Sources */,
-				44A7D66726736E7C00375D21 /* ContentView.swift in Sources */,
+				44A7D66726736E7C00375D21 /* MainView.swift in Sources */,
+				445F6FFD2680912F0074DA6C /* AppereancySettings.swift in Sources */,
 				44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */,
 				444D53C52674056D00299056 /* ItemRequest.swift in Sources */,
 				444D53C02674047C00299056 /* ObjectManager.swift in Sources */,
