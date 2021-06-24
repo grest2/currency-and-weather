@@ -25,7 +25,7 @@ struct MainView: View {
             Spacer()
             VStack {
                 Spacer()
-                NavigationLink("Currency's", destination: EmptyView())
+                NavigationLink("Currency's", destination: CryptoCurrencyView())
                     .foregroundColor(Color.textColor)
                     .font(.title2)
                 Spacer()
@@ -60,21 +60,23 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 15) {
+                Spacer()
                 self.currencyes
+                Spacer()
                 self.weather
+                Spacer()
             }
             .padding(32)
-            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.purple,.weatherback]), startPoint: .top, endPoint: .bottom)
+            .navigationBarTitle(Text("Weather and Currency's")
+                                    .font(.largeTitle),
+                                displayMode: .inline)
+            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
                             .edgesIgnoringSafeArea(.bottom))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    header
-                }
-            }
         }
+        .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
+                        .edgesIgnoringSafeArea(.bottom))
         .onAppear {
-            UINavigationBar.appearance().backgroundColor = .red
+            UINavigationBar.appearance().backgroundColor = .blue
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol IItemWithId {
+protocol IItemWithId : Codable {
     var id: Int { get set }
     
     init(json:[String: Any])
