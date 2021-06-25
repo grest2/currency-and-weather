@@ -13,6 +13,7 @@ struct SearchTextFieldView: View {
     @State var onFocus: Bool = false
     @Binding var text: String
     
+    
     var body: some View {
         
         VStack(alignment: .center,spacing: 5) {
@@ -26,6 +27,7 @@ struct SearchTextFieldView: View {
                     .autocapitalization(.none);
             }
         }
+        
         .frame(height: 30)
                 .padding(8)
                 .overlay(RoundedRectangle(cornerRadius: 8)

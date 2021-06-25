@@ -67,7 +67,7 @@ struct MainView: View {
                 Spacer()
             }
             .padding(32)
-            .navigationBarTitle(Text("Weather and Currency's")
+            .navigationBarTitle(Text("Currency's and Weather")
                                     .font(.largeTitle),
                                 displayMode: .inline)
             .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)

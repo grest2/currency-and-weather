@@ -10,11 +10,12 @@ import SwiftUI
 struct CustomTextField: UIViewRepresentable,View {
     @Binding var text: String
     @Binding var isFocused: Bool
+    
     let textfield = UITextField()
     var isSecured: Bool
     
+    
     func makeUIView(context: UIViewRepresentableContext<Self>) -> UITextField {
-        
         textfield.isUserInteractionEnabled = true
         textfield.delegate = context.coordinator
         return textfield
@@ -30,6 +31,7 @@ struct CustomTextField: UIViewRepresentable,View {
         @Binding var text: String
         @Binding var isFocused: Bool
         
+        
         init(text: Binding<String>,isFocused: Binding<Bool>) {
             _text = text
             _isFocused = isFocused
@@ -37,6 +39,7 @@ struct CustomTextField: UIViewRepresentable,View {
         func textFieldDidChangeSelection(_ textField: UITextField)  {
             text = textField.text ?? ""
         }
+       
         func textFieldDidBeginEditing(_ textField: UITextField) {
             DispatchQueue.main.async {
                 self.isFocused = true
