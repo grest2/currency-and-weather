@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4446B868268600D10081B323 /* SearchTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446B867268600D10081B323 /* SearchTextFieldView.swift */; };
+		4446B86D268601C30081B323 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446B86C268601C30081B323 /* CustomTextField.swift */; };
 		444D534F2673F3E200299056 /* IRequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D534E2673F3E200299056 /* IRequestService.swift */; };
 		444D53562673F4BB00299056 /* IItemWithId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53552673F4BB00299056 /* IItemWithId.swift */; };
 		444D53602673F57400299056 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D535F2673F57400299056 /* CryptoCurrency.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4446B867268600D10081B323 /* SearchTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextFieldView.swift; sourceTree = "<group>"; };
+		4446B86C268601C30081B323 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		444D534E2673F3E200299056 /* IRequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequestService.swift; sourceTree = "<group>"; };
 		444D53552673F4BB00299056 /* IItemWithId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IItemWithId.swift; sourceTree = "<group>"; };
 		444D535F2673F57400299056 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
@@ -111,6 +115,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4446B866268600B70081B323 /* Inputs */ = {
+			isa = PBXGroup;
+			children = (
+				4446B867268600D10081B323 /* SearchTextFieldView.swift */,
+				4446B86C268601C30081B323 /* CustomTextField.swift */,
+			);
+			path = Inputs;
+			sourceTree = "<group>";
+		};
 		444D534A2673F33D00299056 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		444D53542673F44700299056 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4446B866268600B70081B323 /* Inputs */,
 				44AE14DA2684BD940001909F /* View */,
 			);
 			path = Components;
@@ -527,12 +541,14 @@
 				44A7D66E26736E8C00375D21 /* Persistence.swift in Sources */,
 				444D53732673FAA600299056 /* RequestService.swift in Sources */,
 				44A7D66726736E7C00375D21 /* MainView.swift in Sources */,
+				4446B86D268601C30081B323 /* CustomTextField.swift in Sources */,
 				445F6FFD2680912F0074DA6C /* AppereancySettings.swift in Sources */,
 				44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */,
 				444D53C52674056D00299056 /* ItemRequest.swift in Sources */,
 				444D53C02674047C00299056 /* ObjectManager.swift in Sources */,
 				444D53602673F57400299056 /* CryptoCurrency.swift in Sources */,
 				444D534F2673F3E200299056 /* IRequestService.swift in Sources */,
+				4446B868268600D10081B323 /* SearchTextFieldView.swift in Sources */,
 				444D53862673FFD000299056 /* Injection.swift in Sources */,
 				44A7D67126736E8C00375D21 /* currency_and_weather.xcdatamodeld in Sources */,
 				444D53BB2674041100299056 /* IObjectManager.swift in Sources */,

@@ -13,23 +13,31 @@ struct CryptoCurrencyView: View {
     
     private let objectManager: IObjectManager = Resolver.resolve()
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
+    @State var searchingName: String = ""
+    
+    
+  
     
     var body: some View {
-        List {
-            ForEach(self.cryptoCurrencys, id: \.id) {
-                cCurrency in
-                Text(cCurrency.name)
+        VStack {
+            SearchTextFieldView(placeholder: "Ennter currency name",text:$searchingName)
+                
+            List {
+                ForEach(self.cryptoCurrencys, id: \.id) {
+                    cCurrency in
+                    Text(cCurrency.name)
+                }
+                .listRowBackground(Color.currencyback)
             }
-            .listRowBackground(Color.currencyback)
-        }
-        .background(Color.currencyback
-                        .edgesIgnoringSafeArea(.all))
-        .onAppear {
-            self.objectManager.getObjectList(type: CryptoCurrency.self, url: url).then {
-                let itemRequest = $0
-                self.cryptoCurrencys.append(contentsOf: itemRequest.data)
+            .onAppear {
+                self.objectManager.getObjectList(type: CryptoCurrency.self, url: url).then {
+                    let itemRequest = $0
+                    self.cryptoCurrencys.append(contentsOf: itemRequest.data)
+                }
             }
+            .background(Color.currencyback)
         }
+        
     }
 }
 

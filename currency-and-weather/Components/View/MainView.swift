@@ -73,9 +73,8 @@ struct MainView: View {
             .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
                             .edgesIgnoringSafeArea(.bottom))
         }
-        .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
-                        .edgesIgnoringSafeArea(.bottom))
         .onAppear {
+            UITableView.appearance().backgroundColor = UIColor.init(.currencyback)
             UINavigationBar.appearance().backgroundColor = .blue
         }
     }

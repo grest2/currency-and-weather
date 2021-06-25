@@ -21,4 +21,7 @@ extension Color {
     static var weatherback : Color {
         return Color("Weatherback")
     }
+    static var lighting : Color {
+        return Color("Lighting")
+    }
 }
