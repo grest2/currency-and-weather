@@ -8,7 +8,5 @@
 import Foundation
 
 protocol IItemWithId : Codable {
-    var id: Int { get set }
-    
-    init(json:[String: Any])
+    var id: String { get set }
 }

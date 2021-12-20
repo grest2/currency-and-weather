@@ -14,15 +14,14 @@ class ObjectManager: IObjectManager {
     
     private let requestService: IRequestService = Resolver.resolve();
     
-    func getObjectList<T>(type:T.Type,url: String) -> Promise<ItemRequest<T>> {
+    func getObjectList<T>(type:T.Type,url: String) -> Promise<ItemRequest<T>> where T : IItemWithId	 {
         
         return requestService.getMethod(url: url).then {
             json in
-//            let reqItems = try JSONDecoder().decode(ItemRequest<T>.self, from: try JSONSerialization.data(withJSONObject: json))
-            let reqItems = ItemRequest(type: type, json: json)
+            let reqItems = try JSONDecoder().decode(ItemRequest<T>.self, from: try JSONSerialization.data(withJSONObject: json))
+            
             return Promise(reqItems)
-        }
-        .catch{
+        }.catch{
             print(String(describing: $0))
         }
     }

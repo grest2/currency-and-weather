@@ -177,7 +177,6 @@
 			isa = PBXGroup;
 			children = (
 				4446B866268600B70081B323 /* Inputs */,
-				44AE14DA2684BD940001909F /* View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,8 +221,9 @@
 		44A7D66326736E7C00375D21 /* currency-and-weather */ = {
 			isa = PBXGroup;
 			children = (
-				444D53542673F44700299056 /* Components */,
 				444D53532673F42D00299056 /* Entities */,
+				444D53542673F44700299056 /* Components */,
+				44AE14DA2684BD940001909F /* View */,
 				444D534A2673F33D00299056 /* Utilities */,
 				44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */,
 				44A7D66826736E8C00375D21 /* Assets.xcassets */,

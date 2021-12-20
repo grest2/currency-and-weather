@@ -8,10 +8,9 @@ import Resolver
 import SwiftUI
 
 struct CryptoCurrencyView: View {
-    
     let url: String = "https://api.coincap.io/v2/assets"
-    
     private let objectManager: IObjectManager = Resolver.resolve()
+    
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
     @State var searchingName: String = ""
     @SwiftUI.Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
