@@ -7,21 +7,10 @@
 
 import Foundation
 
-class ItemRequest<T> where T: IItemWithId {
-    var items: [T] = [T]()
+class ItemRequest<T> : Decodable where T: IItemWithId {
+    var data: [T] = [T]()
     
-    
-    init(type: T.Type,json:[String: Any]) {
-        if let objectArray = json["data"] as? [Any] {
-            objectArray.forEach({
-                if let itemJson = $0 as? [String: Any] {
-                    guard let item = try? type.init(json:itemJson) else {
-                        return
-                    }
-                    items.append(item)
-                }
-            })
-        }
+    enum CodeKeys: String, CodingKey {
+        case data
     }
-
 }
