@@ -10,7 +10,12 @@ import Resolver
 
 struct MainView: View {
     private let objectManager: IObjectManager = Resolver.resolve();
+    
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
+    @State private var currencyView: Bool = false;
+    @State private var weatherView: Bool = false;
+    
+    private let background = Gradient(colors: [.currencyback,.weatherback])
     
     var header : some View {
         VStack {
@@ -21,40 +26,31 @@ struct MainView: View {
     }
     
     var currencyes :some View {
-        HStack {
+        VStack {
             Spacer()
-            VStack {
-                Spacer()
-                NavigationLink("Currency's", destination: CryptoCurrencyView())
-                    .foregroundColor(Color.textColor)
-                    .font(.title2)
-                Spacer()
-            }
+            Button(action: {
+                self.currencyView = true;
+            }, label: {
+                Text("Currency's")
+            })
             Spacer()
         }
-        .overlay(RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.textColor
-                                .opacity(0.3),lineWidth: 3)
-                    .padding(.horizontal,12))
+        .padding(32)
+        .modifier(RoundedViewWrapper())
     }
     
     var weather : some View {
-        HStack {
+        VStack {
             Spacer()
-            VStack {
-                Spacer()
-                NavigationLink("Weather",destination: EmptyView())
-                    .foregroundColor(Color.textWeatherColor)
-                    .font(.title2)
-                Spacer()
-            }
+            Button(action: {
+                self.weatherView = true;
+            }, label: {
+                Text("Weather")
+            })
             Spacer()
         }
-        .overlay(RoundedRectangle(cornerRadius: 8)
-                    .stroke(Color.textWeatherColor
-                                .opacity(0.3),lineWidth: 3)
-                    .padding(.horizontal,12))
-       
+        .padding(32)
+        .modifier(RoundedViewWrapper())
     }
     
     var body: some View {
@@ -66,22 +62,14 @@ struct MainView: View {
                 self.weather
                 Spacer()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(32)
             .navigationBarTitle(Text("Currency's and Weather")
                                     .font(.largeTitle),
                                 displayMode: .inline)
-            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
+            .background(LinearGradient(gradient: self.background, startPoint: .top, endPoint: .bottom)
                             .edgesIgnoringSafeArea(.bottom))
-        }
-        .onAppear {
-            UITableView.appearance().backgroundColor = UIColor.init(.currencyback)
-            UINavigationBar.appearance().backgroundColor = .blue
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}

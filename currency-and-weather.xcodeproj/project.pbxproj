@@ -18,6 +18,7 @@
 		444D53C02674047C00299056 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BF2674047C00299056 /* ObjectManager.swift */; };
 		444D53C52674056D00299056 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53C42674056D00299056 /* ItemRequest.swift */; };
 		445F6FFD2680912F0074DA6C /* AppereancySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F6FFC2680912F0074DA6C /* AppereancySettings.swift */; };
+		44707F632770C58500FA0495 /* RoundedViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44707F622770C58500FA0495 /* RoundedViewWrapper.swift */; };
 		44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */; };
 		44A7D66726736E7C00375D21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66626736E7C00375D21 /* MainView.swift */; };
 		44A7D66926736E8C00375D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A7D66826736E8C00375D21 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		444D53BF2674047C00299056 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		444D53C42674056D00299056 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 		445F6FFC2680912F0074DA6C /* AppereancySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppereancySettings.swift; sourceTree = "<group>"; };
+		44707F622770C58500FA0495 /* RoundedViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViewWrapper.swift; sourceTree = "<group>"; };
 		44A7D66126736E7C00375D21 /* currency-and-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-and-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_and_weatherApp.swift; sourceTree = "<group>"; };
 		44A7D66626736E7C00375D21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		444D53542673F44700299056 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				44707F612770C55E00FA0495 /* Modifiers */,
 				4446B866268600B70081B323 /* Inputs */,
 			);
 			path = Components;
@@ -194,6 +197,14 @@
 			children = (
 			);
 			path = Weather;
+			sourceTree = "<group>";
+		};
+		44707F612770C55E00FA0495 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				44707F622770C58500FA0495 /* RoundedViewWrapper.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		44A7D65826736E7C00375D21 = {
@@ -551,6 +562,7 @@
 				4446B868268600D10081B323 /* SearchTextFieldView.swift in Sources */,
 				444D53862673FFD000299056 /* Injection.swift in Sources */,
 				44A7D67126736E8C00375D21 /* currency_and_weather.xcdatamodeld in Sources */,
+				44707F632770C58500FA0495 /* RoundedViewWrapper.swift in Sources */,
 				444D53BB2674041100299056 /* IObjectManager.swift in Sources */,
 				444D53562673F4BB00299056 /* IItemWithId.swift in Sources */,
 			);
