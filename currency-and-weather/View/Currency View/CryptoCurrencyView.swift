@@ -8,12 +8,14 @@ import Resolver
 import SwiftUI
 
 struct CryptoCurrencyView: View {
-    let url: String = "https://api.coincap.io/v2/assets"
-    private let objectManager: IObjectManager = Resolver.resolve()
+    @EnvironmentObject var store: Store
+    
+    @SwiftUI.Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
     
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
     @State var searchingName: String = ""
-    @SwiftUI.Environment(\.presentationMode) var presentationMode : Binding<PresentationMode>
+    
+    private let objectManager: IObjectManager = Resolver.resolve()
     
     var backBtn : some View {
         Button(action: {
@@ -31,7 +33,7 @@ struct CryptoCurrencyView: View {
     }
     
     var searchField : some View {
-        SearchTextFieldView(placeholder: "Enter currency name",text:$searchingName)
+        SearchTextFieldView(placeholder: "Enter currency name", text: $searchingName)
             .onChange(of: searchingName, perform: {
                 value in
                 if value != "", self.cryptoCurrencys.filter({$0.name.contains(value)}).count>0 {
@@ -44,26 +46,24 @@ struct CryptoCurrencyView: View {
     
     var cryptoList : some View {
         List {
-            ForEach(self.cryptoCurrencys, id: \.id) {
-                cCurrency in
-                Text(cCurrency.name)
-
+            ForEach(self.store.crypto, id: \.id) {
+                currency in
+                HStack {
+                    Text(currency.name)
+                    Spacer()
+                    Text(currency.priceUsd + " $")
+                }
             }
+            .foregroundColor(Color.black)
             .listRowBackground(Color.currencyback)
         }
         .foregroundColor(Color.textColor)
-        .onAppear {
-            self.objectManager.getObjectList(type: CryptoCurrency.self, url: url).then {
-                let itemRequest = $0
-                self.cryptoCurrencys.append(contentsOf: itemRequest.data)
-            }
-        }
-        .background(Color.currencyback)
+        .foregroundColor(Color.black)
     }
     
     var body: some View {
         VStack(spacing: 0) {
-            searchField
+//            searchField
             cryptoList
         }
         .navigationBarBackButtonHidden(true)

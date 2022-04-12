@@ -18,6 +18,8 @@
 		444D53C02674047C00299056 /* ObjectManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53BF2674047C00299056 /* ObjectManager.swift */; };
 		444D53C52674056D00299056 /* ItemRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D53C42674056D00299056 /* ItemRequest.swift */; };
 		445F6FFD2680912F0074DA6C /* AppereancySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445F6FFC2680912F0074DA6C /* AppereancySettings.swift */; };
+		44A5DDC6280589D200446CAA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A5DDC5280589D200446CAA /* Store.swift */; };
+		44A5DDC828058D6A00446CAA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A5DDC728058D6A00446CAA /* Utils.swift */; };
 		44A7D66526736E7C00375D21 /* currency_and_weatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */; };
 		44A7D66726736E7C00375D21 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A7D66626736E7C00375D21 /* MainView.swift */; };
 		44A7D66926736E8C00375D21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A7D66826736E8C00375D21 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		444D53BF2674047C00299056 /* ObjectManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectManager.swift; sourceTree = "<group>"; };
 		444D53C42674056D00299056 /* ItemRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRequest.swift; sourceTree = "<group>"; };
 		445F6FFC2680912F0074DA6C /* AppereancySettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppereancySettings.swift; sourceTree = "<group>"; };
+		44A5DDC5280589D200446CAA /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		44A5DDC728058D6A00446CAA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		44A7D66126736E7C00375D21 /* currency-and-weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency-and-weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currency_and_weatherApp.swift; sourceTree = "<group>"; };
 		44A7D66626736E7C00375D21 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				445F6FFC2680912F0074DA6C /* AppereancySettings.swift */,
 				44A7D66D26736E8C00375D21 /* Persistence.swift */,
 				444D534B2673F39900299056 /* Dependecy Injection */,
+				44A5DDC728058D6A00446CAA /* Utils.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -196,6 +201,14 @@
 			path = Weather;
 			sourceTree = "<group>";
 		};
+		44A5DDC42805898600446CAA /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				44A5DDC5280589D200446CAA /* Store.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		44A7D65826736E7C00375D21 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +236,7 @@
 			children = (
 				444D53532673F42D00299056 /* Entities */,
 				444D53542673F44700299056 /* Components */,
+				44A5DDC42805898600446CAA /* Store */,
 				44AE14DA2684BD940001909F /* View */,
 				444D534A2673F33D00299056 /* Utilities */,
 				44A7D66426736E7C00375D21 /* currency_and_weatherApp.swift */,
@@ -547,6 +561,8 @@
 				444D53C52674056D00299056 /* ItemRequest.swift in Sources */,
 				444D53C02674047C00299056 /* ObjectManager.swift in Sources */,
 				444D53602673F57400299056 /* CryptoCurrency.swift in Sources */,
+				44A5DDC6280589D200446CAA /* Store.swift in Sources */,
+				44A5DDC828058D6A00446CAA /* Utils.swift in Sources */,
 				444D534F2673F3E200299056 /* IRequestService.swift in Sources */,
 				4446B868268600D10081B323 /* SearchTextFieldView.swift in Sources */,
 				444D53862673FFD000299056 /* Injection.swift in Sources */,

@@ -33,5 +33,4 @@ class CryptoCurrency: IItemWithId, Decodable {
         case vwap24Hr;
         case cryptoUrl = "explorer";
     }
-    
 }

@@ -9,8 +9,10 @@ import SwiftUI
 import Resolver
 
 struct MainView: View {
-    private let objectManager: IObjectManager = Resolver.resolve();
+    @ObservedObject var store: Store = Store()
     @State var cryptoCurrencys: [CryptoCurrency] = [CryptoCurrency]()
+    
+    private let objectManager: IObjectManager = Resolver.resolve();
     
     var header : some View {
         VStack {
@@ -26,7 +28,7 @@ struct MainView: View {
             VStack {
                 Spacer()
                 NavigationLink("Currency's", destination: CryptoCurrencyView())
-                    .foregroundColor(Color.textColor)
+                    .foregroundColor(Color.textWeatherColor)
                     .font(.title2)
                 Spacer()
             }
@@ -67,12 +69,15 @@ struct MainView: View {
                 Spacer()
             }
             .padding(32)
-            .navigationBarTitle(Text("Currency's and Weather")
-                                    .font(.largeTitle),
-                                displayMode: .inline)
-            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom)
-                            .edgesIgnoringSafeArea(.bottom))
+            .navigationBarTitle(Text("Currency's and Weather"), displayMode: .inline)
+            .background(LinearGradient(gradient: Gradient(colors: [.currencyback,.weatherback]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.bottom))
+            .onAppear {
+                self.objectManager.getObjectList(type: CryptoCurrency.self, url: Urls.crypto.rawValue).then {
+                    self.store.crypto.append(contentsOf: $0.data)
+                }
+            }
         }
+        .environmentObject(self.store)
         .onAppear {
             UITableView.appearance().backgroundColor = UIColor.init(.currencyback)
             UINavigationBar.appearance().backgroundColor = .blue
